@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="batteryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2a6c" />
+      <stop offset="50%" stop-color="#b21f1f" />
+      <stop offset="100%" stop-color="#fdbb2d" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="8" width="24" height="16" rx="2" fill="url(#batteryGradient)" />
+  <rect x="28" y="12" width="2" height="8" rx="1" fill="#fff" />
+  <rect x="8" y="12" width="16" height="8" rx="1" fill="rgba(255, 255, 255, 0.3)" />
+  <path d="M14,12 L18,16 L14,20" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

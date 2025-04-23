@@ -1,0 +1,144 @@
+.process {
+  padding: 5rem 2rem;
+  background-color: #f0f4f8;
+}
+
+.process-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #1a2a6c;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 10px;
+}
+
+.process-step {
+  position: relative;
+  margin: 2rem 0;
+  width: 50%;
+  padding: 0 2rem;
+}
+
+.process-step:nth-child(odd) {
+  left: 0;
+  padding-right: 3rem;
+}
+
+.process-step:nth-child(even) {
+  left: 50%;
+  padding-left: 3rem;
+}
+
+.step-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1a2a6c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.process-step:nth-child(odd) .step-icon {
+  right: -25px;
+}
+
+.process-step:nth-child(even) .step-icon {
+  left: -25px;
+}
+
+.step-content {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.step-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #1a2a6c;
+}
+
+.step-content p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.process-cta {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.process-btn {
+  background-color: #1a2a6c;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.process-btn:hover {
+  background-color: #152354;
+}
+
+@media (max-width: 768px) {
+  .process-timeline::before {
+    left: 31px;
+  }
+  
+  .process-step {
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 1rem;
+  }
+  
+  .process-step:nth-child(odd) {
+    left: 0;
+    padding-right: 1rem;
+  }
+  
+  .process-step:nth-child(even) {
+    left: 0;
+    padding-left: 5rem;
+  }
+  
+  .process-step:nth-child(odd) .step-icon {
+    left: 7px;
+    right: auto;
+  }
+  
+  .process-step:nth-child(even) .step-icon {
+    left: 7px;
+  }
+}
